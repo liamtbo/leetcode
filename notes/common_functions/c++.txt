@@ -1,0 +1,46 @@
+1. Input/Output Functions
+
+    std::cout: Used to output data to the standard output (console).
+    std::cin: Used to read input from the standard input (keyboard).
+    std::getline: Reads a full line of input, including spaces, into a string variable.
+
+2. String Functions (from <string>)
+
+    length(): Returns the number of characters in the string.
+    substr(): Extracts a substring from the string based on specified starting position and length.
+    find(): Searches for a substring within the string and returns its position if found.
+    append(): Adds characters to the end of the string.
+    c_str(): Returns a C-style string (null-terminated character array) representation of the string.
+
+3. Mathematical Functions (from <cmath>)
+
+    std::abs(): Returns the absolute value of a number.
+    std::sqrt(): Computes the square root of a number.
+    std::pow(): Raises a number to the power of another number.
+    std::sin(): Computes the sine of an angle (in radians).
+    std::cos(): Computes the cosine of an angle (in radians).
+    std::tan(): Computes the tangent of an angle (in radians).
+
+4. Container Functions (from <vector>, <list>, etc.)
+
+    push_back(): Adds an element to the end of a container (like a vector).
+    size(): Returns the number of elements in the container.
+    at(): Accesses an element at a specific index with bounds checking.
+    begin(): Returns an iterator pointing to the first element of the container.
+    end(): Returns an iterator pointing to one past the last element of the container.
+
+5. Algorithm Functions (from <algorithm>)
+
+    std::sort(): Sorts a range of elements in ascending order.
+    std::find(): Searches for a specific element in a range and returns an iterator to it if found.
+    std::max(): Returns the largest of two values.
+    std::min(): Returns the smallest of two values.
+
+6. Memory Management Functions
+
+    new: Allocates memory for an object or array and returns a pointer to it.
+    delete: Deallocates memory that was previously allocated with new.
+
+7. container Functions
+
+    

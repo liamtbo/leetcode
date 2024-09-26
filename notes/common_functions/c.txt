@@ -1,0 +1,62 @@
+1. Input/Output Functions (from <stdio.h>)
+
+    printf(): Outputs formatted text to the console.
+    scanf(): Reads formatted input from the console.
+    gets(), puts(): Reads a string from input and writes a string to output (though gets() is unsafe and not recommended).
+    fgets(), fputs(): Safer versions of gets() and puts() for file handling or input/output.
+
+2. String Functions (from <string.h>)
+
+    strlen(): Returns the length of a string.
+    strcpy(), strncpy(): Copies a string from one location to another.
+    strcat(), strncat(): Concatenates (appends) one string to another.
+    strcmp(), strncmp(): Compares two strings (with or without a limit on length).
+    strstr(): Finds the first occurrence of a substring in a string.
+    strchr(): Finds the first occurrence of a character in a string.
+    strtok(): Splits a string into tokens based on a delimiter.
+
+3. Memory Management Functions (from <stdlib.h>)
+
+    malloc(): Allocates a block of memory on the heap.
+    calloc(): Allocates memory for an array and initializes all elements to zero.
+    realloc(): Reallocates memory to change the size of a previously allocated block.
+    free(): Frees a previously allocated block of memory.
+
+4. Mathematical Functions (from <math.h>)
+
+    pow(): Computes the power of a number.
+    sqrt(): Computes the square root of a number.
+    abs(): Returns the absolute value of an integer.
+    ceil(), floor(): Rounds a floating-point number up or down to the nearest integer.
+    sin(), cos(), tan(): Trigonometric functions for sine, cosine, and tangent.
+    log(), log10(): Computes the natural or base-10 logarithm of a number.
+
+5. Character Functions (from <ctype.h>)
+
+    isalpha(): Checks if a character is an alphabetic letter.
+    isdigit(): Checks if a character is a digit.
+    isalnum(): Checks if a character is alphanumeric.
+    isspace(): Checks if a character is a whitespace character.
+    toupper(), tolower(): Converts a character to uppercase or lowercase.
+
+6. Standard Library Functions (from <stdlib.h>)
+
+    atoi(), atof(), atol(): Converts a string to an integer, float, or long.
+    rand(), srand(): Generates pseudo-random numbers.
+    exit(): Exits the program and returns a status code to the operating system.
+    system(): Executes a system command.
+
+7. File Handling Functions (from <stdio.h>)
+
+    fopen(), fclose(): Opens or closes a file.
+    fread(), fwrite(): Reads from or writes to a file.
+    fscanf(), fprintf(): Formatted input/output for files.
+    fgetc(), fputc(): Reads or writes a character from/to a file.
+    feof(): Checks for the end of a file.
+    fseek(), ftell(): Moves the file pointer to a specific location and returns its position.
+
+8. Memory Functions (from <string.h>)
+
+    memcpy(): Copies memory from one location to another.
+    memset(): Fills a block of memory with a specific value.
+    memmove(): Moves memory from one location to another, safely handling overlapping regions.

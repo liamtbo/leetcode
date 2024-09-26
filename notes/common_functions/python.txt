@@ -1,0 +1,79 @@
+1. Basic Functions
+
+    print(): Outputs to the console.
+    len(): Returns the length of an object (string, list, tuple, etc.).
+    type(): Returns the type of an object.
+    input(): Gets input from the user.
+    range(): Generates a sequence of numbers.
+    sum(): Sums elements of an iterable.
+    max(), min(): Returns the maximum or minimum of an iterable.
+    abs(): Returns the absolute value of a number.
+    round(): Rounds a number to a specified number of decimal places.
+    sorted(): Returns a sorted list of the specified iterable.
+
+2. Type Conversion
+
+    int(), float(), str(): Convert between data types.
+    list(), tuple(), set(), dict(): Converts into respective types.
+    bool(): Converts a value to a boolean.
+
+3. Data Structures Methods
+
+    append(): Adds an item to the end of a list.
+    extend(): Extends a list by appending all elements from another list.
+    pop(): Removes and returns the last element (or an element by index).
+    remove(): Removes the first matching element.
+    insert(): Inserts an item at a specific index.
+    count(): Returns the number of occurrences of a value.
+    index(): Returns the index of the first occurrence of a value.
+    sort(): Sorts a list in place.
+    reverse(): Reverses a list in place.
+    copy(): Returns a shallow copy of a list/dictionary.
+    clear(): Removes all elements from a list/dictionary.
+    keys(), values(), items(): Returns a view object containing the dictionary’s keys, values, or key-value pairs.
+    get(): Returns the value for a specified key in a dictionary.
+
+4. String Methods
+
+    upper(), lower(): Converts a string to uppercase/lowercase.
+    strip(): Removes leading/trailing whitespace (or specified characters).
+    split(): Splits a string into a list.
+    join(): Joins a list of strings into a single string.
+    replace(): Replaces occurrences of a substring with another string.
+    find(): Returns the index of the first occurrence of a substring.
+    startswith(), endswith(): Checks if a string starts/ends with a particular substring.
+    format(): Formats strings using placeholders.
+
+5. Functional Programming Tools
+
+    map(): Applies a function to all items in an iterable.
+    filter(): Filters items in an iterable based on a condition.
+    reduce(): Reduces a sequence to a single value using a function (requires functools).
+    lambda: Creates small anonymous functions.
+
+6. Error Handling
+
+    try, except, finally: Handles exceptions.
+    raise: Raises an exception manually.
+    assert: Tests if a condition is true.
+
+7. File Handling
+
+    open(): Opens a file for reading, writing, or appending.
+    read(), readline(), readlines(): Reads from a file.
+    write(), writelines(): Writes to a file.
+    close(): Closes a file.
+
+8. Miscellaneous
+
+    enumerate(): Returns an iterator that produces pairs of index and value.
+    zip(): Combines multiple iterables into a single iterable of tuples.
+    all(), any(): Checks whether all/any elements in an iterable are true.
+    isinstance(): Checks if an object is an instance of a class/type.
+    callable(): Checks if an object appears callable (like a function).
+    dir(): Lists valid attributes of an object.
+    help(): Displays help information about modules, functions, etc.
+    id(): Returns the unique ID of an object.
+    hash(): Returns the hash value of an object.
+    eval(): Evaluates a string as Python code.
+    exec(): Executes dynamically created Python code.
