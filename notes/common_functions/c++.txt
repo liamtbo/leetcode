@@ -44,3 +44,23 @@
 7. container Functions
 
     
+classes
+    #include <iostream>
+    class Doggo {
+        std::string name;
+        int age;
+
+        public:
+            Doggo(std::string n, int a) {
+                this->name = n;
+                this->age = a;
+            }
+            void dogtag() {
+                std::cout << name << ": " << age << std::endl;
+            }
+    };
+    int main() {
+        Doggo mydog("cynder", 12);
+        mydog.dogtag();
+    }
+    
