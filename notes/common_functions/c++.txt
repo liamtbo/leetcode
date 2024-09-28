@@ -22,8 +22,12 @@
     std::tan(): Computes the tangent of an angle (in radians).
 
 4. Container Functions (from <vector>, <list>, etc.)
+    std::vector<dtype>: dynamic memory
+    queue<dtype>
+    pair<dtype,dtype>    
 
     push_back(): Adds an element to the end of a container (like a vector).
+    pop_back(): pops last element in container
     size(): Returns the number of elements in the container.
     at(): Accesses an element at a specific index with bounds checking.
     begin(): Returns an iterator pointing to the first element of the container.
@@ -41,9 +45,8 @@
     new: Allocates memory for an object or array and returns a pointer to it.
     delete: Deallocates memory that was previously allocated with new.
 
-7. container Functions
 
-    
+
 classes
     #include <iostream>
     class Doggo {
@@ -64,3 +67,13 @@ classes
         mydog.dogtag();
     }
     
+arrays
+    1d
+        int* array = new int[size];  // Allocate memory for an array of integers
+    2d
+        int** matrix = new int*[rows];      // Allocate memory for an array of row pointers
+        for (int i = 0; i < rows; i++) {
+            matrix[i] = new int[columns];   // Allocate memory for each row
+        }
+    2d vector
+        std::vector<std::vector<dtype>> varname;
