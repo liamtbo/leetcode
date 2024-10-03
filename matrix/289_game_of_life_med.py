@@ -1,3 +1,5 @@
+# this works, come back and recode it in C
+
 class Solution(object):
     def gameOfLife(self, board):
         """
@@ -27,3 +29,8 @@ class Solution(object):
                 else: next_state[i][j] = cell
         return next_state
                 
+input1 = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
+input2 = [[1,1],[1,0]]
+expected_out = [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
+print(Solution().gameOfLife(input2))
+# assert Solution().gameOfLife(input) == expected_out
