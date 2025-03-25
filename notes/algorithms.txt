@@ -1,0 +1,105 @@
+
+
+Binary Tree
+    tree data structure where each node has at most two children: the left child and the right child.
+    Key Terminology
+
+    Root: The top node of the tree.
+    Parent: A node with child nodes.
+    Child: A node that has a parent.
+    Leaf: A node with no children.
+    Depth: The number of edges from the root to the node.
+    Height: The number of edges from the node to the deepest leaf.
+
+             1
+            / \
+           2   3
+          / \
+         4   5
+    
+    class TreeNode:
+        def __init__(self,val=0, left=None, right=None):
+            self.val = val
+            self.left = left
+            self.right = right
+
+    Depth-First Search (DFS)
+
+        dfs_arr = []
+        def bfs(root):
+            if not root: return
+            bfs(root.left)
+            self.dfs_arr.append(root.val)
+            bfs(root.right)
+        bfs(root)
+
+        inorder traversal
+            left->root->right
+            {4,2,5,1,3}
+
+        pre-order traversal
+            root->left->right
+            {1,2,4,5,3}
+
+        postorder traversal
+            left->right->root
+            {4,5,2,3,1}
+    
+    Bredth first-search
+
+        def bfs(root):
+            if not root: return []
+            queue = [root]
+            result = []
+            while queue:
+                node = queue.pop(0)
+                result.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            return result
+
+    full binary Tree
+        Each node either has two children or none.
+        The number of nodes at depth d is at most 2^d.
+               1
+              / \
+              2   3
+            / \ 
+            4  5
+        
+    Perfect binary tree
+        A perfect binary tree is a tree where:
+            All internal nodes have exactly 2 children.
+            All leaf nodes are at the same level.
+        Key Properties:
+            The number of nodes at up to height h is exactly 2^(h+1)−1
+            The number of leaf nodes is at a level is 2^h
+             1
+            / \
+            2   3
+           / \  / \
+           4  5 6  7
+
+    complete binary tree
+        all levels except the last one are completetly filled
+        nodes in last level are left aligned
+        height of complete binary tree with N nodes is at most log_2(N)
+        
+    storing complete and perfects trees in vector
+        for a node at index i
+            left child = 2*i + 1
+            right child = 2*1 + 2
+            parent = (i-1)/2
+
+    Binary Search Tree
+        left node < curr node < right node
+        search time complexit = O(logn)
+
+Stack
+    FIFO
+
+Queue
+    LIFO
+

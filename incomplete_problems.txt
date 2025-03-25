@@ -1,0 +1,13 @@
+
+incomplete
+  155 min stack 1/28
+  236 lowest common ancestor of binary tree 2/17 (i had soltuion in pseudo code and check sol too fast)
+  15 3sum
+
+  
+
+completed but needed help
+  101 symmetric tree
+  530_minimum_abs_diff_bst 1/24 2/15
+  199 binary tree right side 2/16
+  105 construct_binarytree_from_preorder_and_inorder_traversal

@@ -1,0 +1,19 @@
+
+solutions often involve recursion
+how can BFS and DFS be applied as a solution?
+if returning a tree, often the recursive format is as follows:
+    node.root = pull root
+    node.left = recursive call
+    node.right = recursive call
+    return root
+
+base cases for recursion can follow:
+    def recursive_function(node):
+        if node:
+            ....
+
+class TreeNode:
+    def __init__(self, val=0, right=None, left=None):
+        self.val = val
+        self.right = right
+        self.left = left
