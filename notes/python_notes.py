@@ -155,3 +155,16 @@ hashed = hash("hello")  # Gets hash value
 
 eval_result = eval("3 + 4")  # Evaluates a string as code
 exec("x = 5; print(x)")  # Executes string as code
+
+"""
+importing functions from parents folders
+    .
+    ├── db.py
+    └── tests/
+        └── test_something.py
+"""
+import sys
+import os
+parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(parent_dir)
+import file

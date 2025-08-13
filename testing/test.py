@@ -1,7 +1,4 @@
-
-
-
-l = [1,2,3,4,5]
-l1= [2,3,4,5]
-
-print(l1.index(1))
+l = [None, None, None]
+# if l: print("yes")
+# else: print("no")
+print(None + None)

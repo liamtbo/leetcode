@@ -1,0 +1,34 @@
+general
+    what is the problem type?
+        Array/String, Two Pointers, Sliding Window, Matrix, Hashmap, Interval,
+        Stack, Linked List, Binary Tree General, Binary Tree BFS, Binary Search Tree,
+        Graph General, Graph BFS, Trie, Backtracking, Divide & Conquer, Kadane's Algorithm,
+        Binary Search, Heap, Bit Minipulation, Math, 1D DP, Multidimensional DP
+    how large is the input space? is O(N^2) possible?
+    O(n) = O(n) + O(n) i.e two passes through are possible
+
+binary tree general
+    solutions often involves recursion
+    how can BFS and DFS be applied as a solution?
+    if returning a tree, often the recursive format is as follows:
+        node.root = pull root
+        node.left = recursive call
+        node.right = recursive call
+        return root
+
+    base cases for recursion can follow:
+        def recursive_function(node):
+            if node:
+                ....
+
+    class TreeNode:
+        def __init__(self, val=0, right=None, left=None):
+            self.val = val
+            self.right = right
+            self.left = left
+
+Two Pointers
+    should the pointers start at the beggining and end and work inwards?
+
+sliding Window
+    should both pointers start on the left and the right pointer increments until a certain condition is met, then left pointer moves right until another condiiton, repeating this process?

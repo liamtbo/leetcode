@@ -1,0 +1,61 @@
+
+SELECT name, age from users;
+
+SELECT * FROM users WHERE age > 30;
+
+SELECT * FROM users WHERE age > 30 AND city = 'Portland';
+
+SELECT name, age FROM users ORDER BY age DESC;
+
+SELECT * FROM logs ORDER BY timestamp DESC LIMIT 10;
+
+aggregation 
+    Aggregation lets you group rows together based on some column(s), and then perform calculations on each group — like:
+        COUNT(*) → how many rows?
+        SUM(salary) → total salary?
+        AVG(age) → average age?
+        MAX(score) → highest score?
+        MIN(price) → lowest price?
+        
+    SELECT department, COUNT(*) FROM employees GROUP BY department;
+    SELECT city, AVG(age) FROM users GROUP BY city;
+
+JOINs - combine tables
+    For every row in the users table, the database:
+    Looks through the orders table.
+    Finds all rows where orders.user_id == users.id.
+    For each matching order, it combines (or "concats") the user row with the order row into a single output row.
+    assume
+        users(id, name)
+        orders(order_id, total)
+    SELECT users.name, orders.total FROM users JOIN orders on users.id = orders.user_id;
+
+Aliases
+    SELECT u.name, o.total FROM users AS u JOIN orders AS o ON u.id = o.user_id
+
+Subqueries
+    SELECT name FROM users
+    WHERE id IN (SELECT user_id FROM orders WHERE total > 100);
+
+INSERT / UPDATE / DELETE
+    -- Insert
+    INSERT INTO users (name, age) VALUES ('Liam', 25);
+
+    -- Update
+    UPDATE users SET age = 26 WHERE name = 'Liam';
+
+    -- Delete
+    DELETE FROM users WHERE age < 18;
+
+
+Common Interview Tasks
+    Top-N queries
+        SELECT product, COUNT(*) AS num_sales
+        FROM sales
+        GROUP BY product
+        ORDER BY num_sales DESC
+        LIMIT 5;
+    Null handling
+        SELECT name FROM users WHERE email IS NULL;
+    Data filtering
+        SELECT * FROM logs WHERE timestamp >= '2024-01-01';

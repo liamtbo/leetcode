@@ -26,12 +26,12 @@ Binary Tree
     Depth-First Search (DFS)
 
         dfs_arr = []
-        def bfs(root):
+        def dfs(root):
             if not root: return
             bfs(root.left)
             self.dfs_arr.append(root.val)
             bfs(root.right)
-        bfs(root)
+        dfs(root)
 
         inorder traversal
             left->root->right
@@ -49,10 +49,10 @@ Binary Tree
 
         def bfs(root):
             if not root: return []
-            queue = [root]
+            deque = deque(root)
             result = []
             while queue:
-                node = queue.pop(0)
+                node = deque.pop(0)
                 result.append(node.val)
                 if node.left:
                     queue.append(node.left)

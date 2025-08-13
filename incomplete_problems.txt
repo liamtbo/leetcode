@@ -1,8 +1,12 @@
 
 incomplete
-  155 min stack 1/28
-  236 lowest common ancestor of binary tree 2/17 (i had soltuion in pseudo code and check sol too fast)
-  15 3sum
+    155 min stack 1/28
+    236 lowest common ancestor of binary tree 2/17 (i had soltuion in pseudo code and check sol too fast)
+    15 3sum
+    11 container with most water
+        i was very very close, implemented it perfectly first try, need to fully comprehend logic of algorithm though
+    138 copy list with random pointers
+        My sol was similar, but was much worse in implementation - hashmaps were key
 
   
 

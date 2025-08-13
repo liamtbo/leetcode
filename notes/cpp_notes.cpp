@@ -45,7 +45,6 @@ void string_ex();
 void class_ex();
 void mem_ex();
 void vector_ex();
-void increment(int& n);
 void queue_ex();
 
 int main() {
@@ -67,11 +66,6 @@ int main() {
     // };
     // cout << lambda_ex(5,6) << endl;
 
-}
-
-void iterator() {
-    vector<int> tmp = {1,2,3,4,5};
-    
 }
 
 void queue_ex() {
@@ -221,10 +215,6 @@ void string_ex() {
     tmp = tolower(tmp);
 }
 
-void increment(int& n) {
-    n++;
-}
-
 /*
 Lists vs Vectors
 Operation	                    std::vector	                                    std::list
@@ -311,7 +301,7 @@ void vector_ex() {
 
     // findng index of a value
     vector<int> vec8 = {1,2,3,4,5};
-    auto it = find(vec8.begin(), vec8.end(), 3);
+    auto it = find(vec8.begin(), vec8.end(), 3); // rets an iterator
 }
 
 

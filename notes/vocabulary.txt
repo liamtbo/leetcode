@@ -1,0 +1,45 @@
+
+Core OOP Terms
+Encapsulation
+    Bundling data and methods into a class and hiding internal details using access specifiers (private, public).
+
+Inheritance
+    One class (child) inherits properties and behavior (methods) from another class (parent), enabling code reuse.
+
+Polymorphism
+    Ability to use the same function or method name with different underlying implementations, especially via base-class pointers.
+
+Abstraction
+    Hiding complex implementation details and exposing only the necessary parts through interfaces or abstract classes.
+
+C++-Specific Terms:
+
+Overloading
+    Defining multiple functions or operators with the same name but different parameter types or numbers.
+
+Overriding
+    A derived class providing a specific implementation of a virtual method already defined in the base class.
+
+Virtual Function
+    A function declared with the virtual keyword in a base class, allowing dynamic dispatch at runtime.
+
+Constructor
+    A special method automatically called when an object is created; initializes the object.
+
+Destructor
+    A method automatically called when an object goes out of scope or is deleted; used to free resources.
+
+Copy Constructor
+    A constructor that creates a new object as a copy of an existing object: ClassName(const ClassName& other).
+
+Operator Overloading
+    Redefining how built-in operators (+, ==, etc.) behave for user-defined types.
+
+Template
+    A way to write generic and reusable code — allows functions and classes to work with any data type.
+
+Static Member
+    A class member that belongs to the class itself rather than to any specific object.
+
+Namespace
+    A container for identifiers to avoid name conflicts across multiple libraries or parts of code.
