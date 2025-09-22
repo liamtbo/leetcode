@@ -3,6 +3,11 @@
 #include <iostream>
 using namespace std;
 
+/*
+Run with:
+    g++ filepath -o main; ./main
+*/
+
 struct TreeNode {
     int val;
     TreeNode *left;
