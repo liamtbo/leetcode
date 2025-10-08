@@ -19,7 +19,7 @@ void vector_ex() {
     vector<int> vec2(5, 10);  // 5 elements, all set to 10
     vector<int> vec3;         // Empty vector
 
-    // Adding and removing elements
+    // Adding and removing elements to end of vector
     vec3.push_back(1);
     vec3.push_back(2);
     vec3.push_back(3);
@@ -30,13 +30,16 @@ void vector_ex() {
     cout << vec3[0] << endl;    // No bounds checking
     cout << vec3.at(0) << endl; // With bounds checking
 
+    // replacing elemenets
+    vec3[0] = 10;
+
     // Inserting and erasing in the middle
     vector<int> vec4 = {1, 2, 3, 4};
     for (int val : vec4) cout << val << " ";
     cout << endl;
 
     auto middle = vec4.begin() + vec4.size() / 2;
-    vec4.insert(middle, 999); // Insert in the middle
+    vec4.insert(middle, 999); // Insert in the middle, does not replace element!
 
     vec4.erase(vec4.begin() + vec4.size() / 2); // Erase from the middle
     for (int num : vec4) cout << num << " ";

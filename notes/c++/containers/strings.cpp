@@ -12,10 +12,11 @@ void string_ex() {
     string myStr = "codeine crazy";
     myStr[7] = '$';
     
-    myStr.append("drinking");
-    myStr.append(1, 'f'); // need to say how many chars when adding just one
+    // adding to string
     myStr += " crazy";
     myStr += 'f';
+    myStr.append("drinking");
+    myStr.append(1, 'f'); // need to say how many chars when adding just one
 
     string str1 = "big checks";
     str1.insert(3, "$");
@@ -26,26 +27,32 @@ void string_ex() {
     if (str1[0] == 'h') {cout << "True" << endl;}
 
     // starts at index 7, + len of 5
-    string sub = str1.substr(4, 5);
+    string sub = str1.substr(4, 5); // O(n)
 
     string str2 = "chunk melon";
     // reversing option 1
-    reverse(str2.begin(), str2.end());
+    reverse(str2.begin(), str2.end()); // O(n)
     // reversing option 2
     for (int i=0; i<str2.size() / 2; i++) {
         swap(str2[i], str2[str2.size() - 1 - i]);
     }
 
-    // breaking up string based on " "
+    // Split
     string sentence = "hello darkness my old friend";
-    istringstream iss(sentence); // allows us to treat string as a stream
+    stringstream ss(sentence); // turns string into stream that can be read and written too
     string word;
     vector<string> words;
-
-    while (getline(iss, word, ' ')) {
-        if (word.size() == 0) { continue; } // double spaces "  " skipped
+    while (ss >> word) {
         words.push_back(word);
     }
+
+    // formatting string of mixed types
+    int a = 42;
+    double b = 3.14;
+    bool c = true;
+    stringstream ss;
+    ss << "a=" << a << ", b=" << b << ", c=" << c;
+    cout << ss.str() << endl;
 
     string word1 = "new ba11sack";
     if (isalpha(word1[0])) {cout << "letter";}

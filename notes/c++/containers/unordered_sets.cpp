@@ -5,11 +5,12 @@ using namespace std;
 
 // ------------------------------------------
 /*
+uses Hashing to store elemements
 Operation	Time Complexity
-Insert an element	O(1) (average)
-Delete an element	O(1) (average)
-Access element by position  O(n)
-Find element by value	O(1) (average)
+Insert an element	O(1) average, O(n) worst case (hash collisions)
+Delete an element	O(1) average, O(n) worst case (hash collisions)
+Access element by position  O(n) 
+Find element by value	O(1) (average), O(n) worst case (hash collisions)
 Traverse the set	O(n)
 */
 void unordered_sets_ex() {
