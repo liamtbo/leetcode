@@ -11,7 +11,6 @@ delete  O(1)        O(n)
 travers O(n)        O(n)
 */
 
-
 void unordered_map_ex() {
     unordered_map<string, int> food1;
     unordered_map<string, int> food2 = {
@@ -45,11 +44,5 @@ void unordered_map_ex() {
     }
 
     // deleting elements
-    food2.erase("pizza")
-
-
-}
-
-int main() {
-    unordered_map_ex();
+    food2.erase("pizza");
 }

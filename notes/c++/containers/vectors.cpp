@@ -4,14 +4,13 @@
 using namespace std;
 
 /*
-Operation	Time Complexity
-Insert an element at the end	O(1) (amortized)
-Insert an element somewhere in the middle	O(n)
-Delete an element from the end	O(1)
-Delete an element from somewhere in the middle	O(n)
-Access an element by index	O(1)
-Traverse the vector	O(n)
-Find an element by value O(n)
+Operation	                                    Average             Worst Case
+push_back(x)	Add element to end              Amortized O(1)	    Occasionally O(n) when resizing
+pop_back()	Remove last element	                O(1)	            No reallocation
+insert(pos, x)	Insert at arbitrary position	O(n)	            Shifts elements after pos
+erase(pos)	Remove one element	                O(n)	            Shifts elements after pos
+erase(first, last)	Erase range	                O(n)	            Shifts remaining elements
+clear()	Remove all elements	                    O(n)	            Calls destructor for each element
 */
 void vector_ex() {
     // Vector Initialization
